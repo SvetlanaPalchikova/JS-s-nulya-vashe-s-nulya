@@ -1,28 +1,42 @@
-<input value="hello it-kamasutra" class="hello-message input" id="hello-message" />
-<h1> Пикап</h1>
+<input value="Svetlana" class="first-name default-input" id="first-name" />
+<input value="Palchik" class="last-name default-input" id="last-name" />
+<input value="Krasnodar" class="address default-input" id="address" />
 
-<ul>
-  <li>Подстричься</li>
-  <li>Приодеться</li>
-  <li>Выучить пару шуток</li>
-  <li>Подойти к девушке</li>
-  <li>Сказать привет</li>
-  <li>Рассказать пару шуток</li>
-  <li>Взять номер телефона</li>
+<select id= "cities">
+<option>Kiev</option>
+<option selected='selected'>Minsk</option>
+<option>Moscow</option>
+</select>
 
+<textarea id="hobbies">JS, CSS, HTML</textarea>
 
-</ul>
-
+<div id="avatar-wrapper">
+    <img id='avatar' src = 'https://vk.com/photo-30026037_456271043' alt='avatar'>
+</div>
 
 <script>
-  var helloMessageElement;
-  var helloMessageId;
+    var firstNameId = "first-name";
+    var firstNameEl = document.getElementById(firstNameId);
+    var lastNameId = "last-name";
+    var lastNameEl = document.getElementById(lastNameId);
+    var addressId = "address";
+    var addressEl = document.getElementById(addressId);
+    var citiesId= "cities";
+    var citiesEl = document.getElementById(citiesId);
+    var hobbiesId= "hobbies";
+    var hobbiesEl = document.getElementById(hobbiesId);
+    var avatarWrapperId= "avatar-wrapper";
+    var avatarWrapperEl = document.getElementById(avatarWrapperId);
+    var avatarId= "avatar";
+    var avatarEl = document.getElementById(avatarId);
 
-  helloMessageId = "hello-message";
-  helloMessageElement = document.getElementById(helloMessageId);
+
+    window.alert(avatarEl.src);
 
 
-  window.alert(helloMessageElement.value);
-  window.alert(helloMessageElement.id);
-  window.alert(helloMessageElement.className);
+
+
+//window.alert(hobbiesEl.value);
+//window.alert(lastNameEl.value);
+//window.alert(addressEl.value);
 </script>
