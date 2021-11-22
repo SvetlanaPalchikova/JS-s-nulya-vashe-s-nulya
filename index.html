@@ -30,13 +30,27 @@
     var avatarId= "avatar";
     var avatarEl = document.getElementById(avatarId);
 
+firstNameEl.value = "Andrey";
+//lastNameEl.setAttribute("value", "kamasutra";
 
-    window.alert(avatarEl.src);
+ //  window.alert(lastNameEl.className);
+    lastNameEl.className = "last-name default-input error-input";
+    avatarEl.src = "https://vk.com/photo502314705_456239018?all=1";
+    avatarEl.title = "i am avatar";
+hobbiesEl.value = "I am not interest";
+    avatarWrapperEl.innerHTML = "<ul id='list'></ul> <li>1</li> <li>2 </li>";
+    var listId = 'list';
+var numberlist = document.getElementById(listId);
 
-
-
-
-//window.alert(hobbiesEl.value);
-//window.alert(lastNameEl.value);
-//window.alert(addressEl.value);
+window.alert(numberlist.innerHTML);
 </script>
+
+<style>
+    .default-input {
+        border: green 3px solid;
+        padding: 5px;
+    }
+    .error-input {
+        border-color: red;
+    }
+</style>
